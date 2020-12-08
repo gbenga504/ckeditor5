@@ -29,6 +29,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -49,6 +50,7 @@ ClassicEditor.builtinPlugins = [
 	ImageToolbar,
 	ImageUpload,
 	Indent,
+	IndentBlock,
 	Link,
 	List,
 	MediaEmbed,
@@ -73,6 +75,8 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'indent',
 			'outdent',
+			'indentBlock',
+			'outdentBlock',
 			'|',
 			'imageUpload',
 			'blockQuote',
